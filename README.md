@@ -1,5 +1,4 @@
 # The Determinants of Analyst Forecast Revisions: Exploratory analysis through Word embeddings and Topic modeling
-## Author: Tian Chen, Zixu Chen
 ## Social Science Question
 Outside analysts make monthly forecast about taget companies' earnings per share (EPS) at certain future times, say 2-year-ahead EPS. As their estimates would have effect on investors' decision making, and more importantly, any deviation from the realized EPS and estimated ones would reflect on the corresponding stock prices. Therefore, we are interested in understanding the decision-making process of the analysts' revision of the monthly EPS forecast. 
 
@@ -7,15 +6,15 @@ The revision is approximately made monthly, and as an ocean of news come in duri
 
 Therefore, an exploratory analysis of the news data would be a tremendous start. To investigate possible determinants of analyst forecast revisions, the first step is to examine the dimensions that have connection with analyst forecast revisions supported by previous literatures. A topic modeling approach could also help us to have an overview of the trends of dynamic news. Next, we can construct these cultural dimensions using huge corpora of news text from the past and the word embedding models.
 ## Research Design and Plan
-a. Propose hypothesis about possible determinants of analyst forecast revisions using evidence from relevant literatures. (Tian Chen)
+a. Propose hypothesis about possible determinants of analyst forecast revisions using evidence from relevant literatures.
 
-b. Collect dynamic news data on Wall Street Journal from ProQuest text and data mining (TDM) studios. (Tian Chen)
+b. Collect dynamic news data on Wall Street Journal from ProQuest text and data mining (TDM) studios.
 
-c. Get the xml file content, parse the files and convert data of different months into DataFrame using MultiProcessing Pool. (Zixu Chen)
+c. Get the xml file content, parse the files and convert data of different months into DataFrame using MultiProcessing Pool.
 
-d. Build topic modeling models: use Scikit-learn CountVecterizer to produce term-document matrix and use Scikit-learn NMF model to train the topic modeling, parallelizing using joblib and Dask in the backend. (Zixu Chen, Tian Chen)
+d. Build topic modeling models: use Scikit-learn CountVecterizer to produce term-document matrix and use Scikit-learn NMF model to train the topic modeling, parallelizing using joblib and Dask in the backend.
 
-e. Train dynamic monthly word-embedding models using rolling monthly data in the most recent two years using Word2Vec and Dask DataFrame, extracting the cultural dimensions that are relevant to analyst forecast revisions we mentioned below. (Zixu Chen, Tian Chen)
+e. Train dynamic monthly word-embedding models using rolling monthly data in the most recent two years using Word2Vec and Dask DataFrame, extracting the cultural dimensions that are relevant to analyst forecast revisions we mentioned below.
 
 Some future research to be extended:
 
